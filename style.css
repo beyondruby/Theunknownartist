@@ -1,0 +1,127 @@
+*{
+
+margin: 0;
+padding: 0;
+
+}
+
+.hero{
+
+width: 100%;
+height: 100%;
+background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url(images/banner.jpg);
+background-position: center;
+background-size: cover;
+position: absolute;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+ 
+
+
+ 
+
+.form-box{
+
+    position: absolute;
+    width: 754px;
+    height: 568px;
+    left: 570px;
+    top: 164px;
+    
+    background: rgba(251, 253, 248, 0.48);
+    box-shadow: 11px 16px 83px rgba(64, 75, 5, 0.28);
+    backdrop-filter: blur(11px);
+    
+    border-radius: 22px;
+}
+
+.heading {
+    position: absolute;
+width: 328px;
+height: 62px;
+left: 556px;
+top: 203px;
+
+
+
+/* Happy to see you here! */
+
+position: absolute;
+left: 39.31%;
+right: 39.31%;
+top: 26.67%;
+bottom: 70.56%;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 154%;
+/* identical to box height, or 25px */
+text-align: center;
+
+/* grey */
+color: #444444;
+
+
+
+/* Register */
+
+position: absolute;
+width: 328px;
+height: 25px;
+left: 556px;
+top: 203px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 79.5%;
+/* or 25px */
+text-align: center;
+
+/* dark */
+color: #333333;
+}
+
+
+.button {
+
+top : 80%;
+left: 0px;
+width: 220px;
+margin: 35px auto;
+position: relative;
+box-shadow: 0 0 20px 9px #ffffff;
+border-radius: 30px;
+}
+
+
+.toggle-btn{
+padding: 10px 30px;
+cursor: pointer;
+background: transparent;
+border: 0;
+outline: none;
+position: relative;
+}
+
+#btn{
+
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(90deg, #4010A1 1.04%, #C84E89 37.5%, #F15F79 62.5%, #F79100 98.96%);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+
+
+
+
+ 
+
