@@ -9,7 +9,7 @@ ul, li {
 
 body {
 
-background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url(banner.jpg);
+background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url(https://github.com/beyondruby/Theunknownartist/blob/main/banner.jpg?raw=true);
 background-repeat: no-repeat;
 background-size: cover;
 }
