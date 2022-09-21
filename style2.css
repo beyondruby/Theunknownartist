@@ -9,7 +9,7 @@ ul, li {
 
 body {
 
-background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url(https://github.com/beyondruby/Theunknownartist/blob/main/banner.jpg?raw=true);
+background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url(images/banner.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -53,7 +53,7 @@ background-size: cover;
 }
 .main-nav li:nth-child(1) a:hover {
 	background: #fff;
-	color: #d83d3d;
+	color: #F79100;
 }
 
 .main-nav li:nth-child(2) a {
@@ -61,8 +61,8 @@ background-size: cover;
 	border: 2px solid #ffffff;
 }
 .main-nav li:nth-child(2) a:hover {
-	background: #b13131;
-	border: 2px solid #b13131;
+	background: #F79100;
+	border: 2px solid #F79100;
 }
 
 .user-modal {
@@ -218,7 +218,7 @@ background-size: cover;
   outline: none;
 }
 .form input.has-error {
-  border: 1px solid #d76666;
+  border: 1px solid #F79100;
 }
 .form input[type=password] {
   /* space left for the HIDE button */
@@ -245,7 +245,7 @@ background-size: cover;
 	background: #f79100;
 }
 .no-touch .form input[type=submit]:hover, .no-touch .form input[type=submit]:focus {
-  background: #1aa804a5;
+  background: #F79100;
   outline: none;
 }
 .form .hide-password {
@@ -417,7 +417,7 @@ background-size: cover;
 }
 
 .accept-terms {
-	color: #F64747;
+	color: #F79100;
 	text-decoration: none;
 	padding: 0 1px 1px 2px;
 	border-bottom: 1px solid rgba(246, 71, 71, .0);
@@ -431,7 +431,7 @@ background-size: cover;
 	-webkit-animation: borderslide-2px .5s;
 	        animation: borderslide-2px .5s;
 	padding-bottom: 2px;
-	border-bottom: 1px solid rgba(246, 71, 71, 1);
+	border-bottom: 1px solid #F79100;
 }
 
 #login, #signup, #reset-password {
