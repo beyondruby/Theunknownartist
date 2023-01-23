@@ -1,0 +1,36 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "Command failed with ENOTDIR: create next-app --typescript\nspawn ENOTDIR",
+      "code": "ENOTDIR",
+      "stack": "Error: Command failed with ENOTDIR: create next-app --typescript\nspawn ENOTDIR\n    at ChildProcess.spawn (node:internal/child_process:413:11)\n    at Object.spawn (node:child_process:700:9)\n    at Object.execa [as default] (/Users/todsapon.bo/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:48950:32)\n    at /Users/todsapon.bo/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:121790:34"
+    }
+  },
+  "2 error pnpm": {
+    "errno": -20,
+    "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+    "syscall": "spawn",
+    "originalMessage": "spawn ENOTDIR",
+    "shortMessage": "Command failed with ENOTDIR: create next-app --typescript\nspawn ENOTDIR",
+    "command": "create next-app --typescript",
+    "escapedCommand": "create next-app --typescript",
+    "stdout": "",
+    "stderr": "",
+    "all": "",
+    "failed": true,
+    "timedOut": false,
+    "isCanceled": false,
+    "killed": false,
+    "prefix": "/Users/todsapon.bo/_me_/code/volunteer/Theunknownartist",
+    "err": {
+      "name": "Error",
+      "message": "Command failed with ENOTDIR: create next-app --typescript\nspawn ENOTDIR",
+      "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+      "stack": "Error: Command failed with ENOTDIR: create next-app --typescript\nspawn ENOTDIR\n    at ChildProcess.spawn (node:internal/child_process:413:11)\n    at Object.spawn (node:child_process:700:9)\n    at Object.execa [as default] (/Users/todsapon.bo/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:48950:32)\n    at /Users/todsapon.bo/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:121790:34"
+    }
+  }
+}

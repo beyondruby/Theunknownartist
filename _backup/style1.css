@@ -1,0 +1,15 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    
+    }
+
+
+
+.logo {
+align-self: flex-start;
+height: 63px;
+object-fit: cover;
+width: 5%;
+}
