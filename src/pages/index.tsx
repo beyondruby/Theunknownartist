@@ -1,9 +1,86 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
+import logoImg from "../../public/images/beyondruby_logo.jpg";
+import globVec from "../../public/images/glob_vector.jpg";
+import downArrowVec from "../../public/images/down_arrow_vector.jpg";
+import burgerMenuVec from "../../public/images/burgermenu_vector.jpg";
 
-const inter = Inter({ subsets: ["latin"] });
+const langSwitcherContainer = [
+  "w-auto",
+  "flex",
+  "flex row",
+  "flex-wrap",
+  "space-x-[4px]",
+  "items-center",
+  "cursor-pointer",
+].join(" ");
+const grobVecCls = ["h-[22px]", "w-[22px]"].join(" ");
+const langTitleCls = ["text-[#4010A1]", "text-sm"].join(" ");
+const downArrowCls = ["w-[20px]", "h-[5px]", "object-contain"].join(" ");
+
+const LanguageSwitcher = () => {
+  return (
+    <div className={langSwitcherContainer}>
+      <Image src={globVec} alt="" className={grobVecCls} />
+      <p className={langTitleCls}>En</p>
+      <Image src={downArrowVec} alt="" className={downArrowCls} />
+    </div>
+  );
+};
+
+const Nav = () => {
+  const containerCls = [
+    "h-auto",
+    "py-[15px]",
+    "px-[147px]",
+    "w-full",
+    "bg-white",
+    "drop-shadow-md",
+    "flex",
+    "flex-row",
+  ].join(" ");
+
+  const loginBtnCls = [
+    "h-[36px]",
+    "bg-white",
+    "border",
+    "border-2",
+    "border-solid",
+    "border-amber-500",
+    "px-4",
+    "py-1",
+    "rounded-full",
+    "text-amber-500",
+    "transition",
+    "hover:text-white",
+    "hover:bg-amber-500",
+    "hover:border-white",
+    "hover:duration-300",
+  ].join(" ");
+  const hamburgerMenuCls = [
+    "h-[18px]",
+    "w-[36px]",
+    "object contain",
+    "cursor-pointer",
+  ].join(" ");
+
+  return (
+    <div className={containerCls}>
+      <Image
+        src={logoImg}
+        alt="the unknow artist"
+        priority
+        className="h-[63px] w-[98px] object-contain"
+      />
+
+      <div className="flex flex-row flex-1 justify-end items-center space-x-[32px]">
+        <LanguageSwitcher />
+        <button className={loginBtnCls}>Log In</button>
+        <Image className={hamburgerMenuCls} src={burgerMenuVec} alt={"menu"} />
+      </div>
+    </div>
+  );
+};
 
 export default function Home() {
   return (
@@ -14,8 +91,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}></main>
-      <h2 className="text-3m font-bold underline">test</h2>
+      <div>
+        <Nav />
+      </div>
     </>
   );
 }
