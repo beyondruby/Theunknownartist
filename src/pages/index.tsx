@@ -1,62 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
-import logoImg from "../../public/images/beyondruby_logo.jpg";
-import burgerMenuVec from "../../public/images/burgermenu_vector.jpg";
-import LanguagesSwitcher from "../components/atoms/LanguagesSwitcher";
-
-const Nav = () => {
-  const containerCls = [
-    "h-auto",
-    "py-[15px]",
-    "px-[147px]",
-    "w-full",
-    "bg-white",
-    "drop-shadow-md",
-    "flex",
-    "flex-row",
-  ].join(" ");
-
-  const loginBtnCls = [
-    "h-[36px]",
-    "bg-white",
-    "border",
-    "border-2",
-    "border-solid",
-    "border-amber-500",
-    "px-4",
-    "py-1",
-    "rounded-full",
-    "text-amber-500",
-    "transition",
-    "hover:text-white",
-    "hover:bg-amber-500",
-    "hover:border-white",
-    "hover:duration-300",
-  ].join(" ");
-  const hamburgerMenuCls = [
-    "h-[18px]",
-    "w-[36px]",
-    "object contain",
-    "cursor-pointer",
-  ].join(" ");
-
-  return (
-    <div className={containerCls}>
-      <Image
-        src={logoImg}
-        alt="the unknow artist"
-        priority
-        className="h-[63px] w-[98px] object-contain"
-      />
-
-      <div className="flex flex-row flex-1 justify-end items-center space-x-[32px]">
-        <LanguagesSwitcher />
-        <button className={loginBtnCls}>Log In</button>
-        <Image className={hamburgerMenuCls} src={burgerMenuVec} alt={"menu"} />
-      </div>
-    </div>
-  );
-};
+import Navbar from "../components/organisms/Navbar";
 
 export default function Home() {
   return (
@@ -68,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <Nav />
+        <Navbar />
       </div>
     </>
   );
