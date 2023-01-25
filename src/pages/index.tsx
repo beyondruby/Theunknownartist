@@ -1,32 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import logoImg from "../../public/images/beyondruby_logo.jpg";
-import globVec from "../../public/images/glob_vector.jpg";
-import downArrowVec from "../../public/images/down_arrow_vector.jpg";
 import burgerMenuVec from "../../public/images/burgermenu_vector.jpg";
-
-const langSwitcherContainer = [
-  "w-auto",
-  "flex",
-  "flex row",
-  "flex-wrap",
-  "space-x-[4px]",
-  "items-center",
-  "cursor-pointer",
-].join(" ");
-const grobVecCls = ["h-[22px]", "w-[22px]"].join(" ");
-const langTitleCls = ["text-[#4010A1]", "text-sm"].join(" ");
-const downArrowCls = ["w-[20px]", "h-[5px]", "object-contain"].join(" ");
-
-const LanguageSwitcher = () => {
-  return (
-    <div className={langSwitcherContainer}>
-      <Image src={globVec} alt="" className={grobVecCls} />
-      <p className={langTitleCls}>En</p>
-      <Image src={downArrowVec} alt="" className={downArrowCls} />
-    </div>
-  );
-};
+import LanguagesSwitcher from "../components/atoms/LanguagesSwitcher";
 
 const Nav = () => {
   const containerCls = [
@@ -74,7 +50,7 @@ const Nav = () => {
       />
 
       <div className="flex flex-row flex-1 justify-end items-center space-x-[32px]">
-        <LanguageSwitcher />
+        <LanguagesSwitcher />
         <button className={loginBtnCls}>Log In</button>
         <Image className={hamburgerMenuCls} src={burgerMenuVec} alt={"menu"} />
       </div>
