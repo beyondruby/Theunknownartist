@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "../components/organisms/Navbar";
+import StoreLeadingContent from "@/components/organisms/StoreLeadingContent";
 
 export default function Home() {
   return (
@@ -10,9 +11,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <Navbar />
-      </div>
+      <Navbar />
+      <StoreLeadingContent />
+
+      {/* Welcome to ruby market place */}
     </>
   );
 }
